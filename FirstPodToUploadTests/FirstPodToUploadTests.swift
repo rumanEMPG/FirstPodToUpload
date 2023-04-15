@@ -25,3 +25,22 @@ class FirstPodToUploadTests: XCTestCase {
     }
 
 }
+
+
+class First1PodToUploadTests: XCTestCase {
+    
+    var swiftyLib: SwiftFile11!
+
+    override func setUp() {
+        swiftyLib = SwiftFile11()
+    }
+
+    func testAdd() {
+        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(swiftyLib.sub(a: 2, b: 1), 1)
+    }
+
+}
